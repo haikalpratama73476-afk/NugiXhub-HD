@@ -828,7 +828,7 @@ local screenGui = create("ScreenGui", {
     ResetOnSpawn = false,
     IgnoreGuiInset = true,
     DisplayOrder = 10000,
-    ZIndexBehavior = Enum.ZIndexBehavior.Global,
+    ZIndexBehavior = Enum.ZIndexBehavior.Sibling, -- FIX: keep page descendants visible above the panel background
 }, GuiParent)
 gui = screenGui
 
